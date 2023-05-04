@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+      /*body*/
+
+body {
+     background-color:rgb(236, 251, 251);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+
+/*for linkedin logo*/
+.header__left img {
+     object-fit: contain;
+     height: 40px;
+     margin-right: 10px;
+
+}
+
+   /*Header design */
+.Header {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom:0.1px solid rgb(155, 150, 150) ;
+    padding: 10px;
+    background-color: white;
+}
+
+    /*Header left display */
+.header__left {
+    display: flex;    
+
+}
+    /*header right display */
+.Header__right {
+   display: flex; 
+}
+
+/* search section design */
+.Header__search {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: rgb(237, 235, 235);
+}
+
+/*search bar input type*/
+.Header__search  input{
+     border: none;
+     background: none;
+}
+
+/* icones on header */
+.header__option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    color: rgb(131, 128, 128);
+    cursor: pointer;
+}
+ 
+/*bold header options*/
+
+.header__option:hover {
+    color: black;
+}
+  
+/* heading of header options */
+.header__option h3{
+    font-size: 19px;
+    margin-top: 10px;
+    font-weight: 400;
+
+}
+
+ /*placed icones */
+.headeroption__icon{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+/* main body  */
+
+.body__main {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin-left: 50px;
+    margin-right: 500px;
+    /* padding-left: 150px; */
+    /* padding-right: 150px; */
+}
+
+/* sidebar  position */
+.sidebar{
+    /* float: left; */
+    /* padding-right: 1100px; */
+    position: sticky;
+    padding: 300px;
+    padding-top: 10px;
+    /* padding-right: 30px; */
+    top: 80px;
+    flex: 0.2;
+    border-radius: 100px;
+    text-align: center;
+    height: fit-content;
+    
+}
+/* sidebar picture size */
+ .sidebar__top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+} 
+/* sidebar top design  */
+  .sidebar__top {
+    position: sticky;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: 1px solid lightgrey;
+   border-bottom: 0;
+   border-top-left-radius:10px ;
+   border-top-right-radius: 10px;
+   background-color: white;
+   padding-bottom: 10px;
+} 
+.headeroption__icon
+{
+    position: sticky;
+    font-weight: 400;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.sidebar__stats{
+    position: sticky;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar__stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.sidebar__stat p{
+    color: rgb(109, 106, 106);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* statusbar numbeer  */
+.sidebar__statNumber{
+    font-weight: bold;
+    color: rgb(50, 98, 189) !important;
+}
+
+/* gamil design */
+.sidebar__top h4{
+    color:rgb(109, 106, 106);
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.sidebar__top h2{
+    font-size: 20px;
+}
+
+.sidebar__bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.sidebar__recentItem{
+    display: flex;
+    font-size: 13px;
+    color:rgb(109, 106, 106);
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.sidebar__recentItem:hover{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+
+}
+
+.sidebar__hash{
+    margin: 0 10px;
+}
+
+.sidebar__bottom p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* Feed starts  */
+.feed{
+    flex: 0.6;
+    margin: 0 -70px;
+    margin-right: 200px;
+    margin-left: -250px;
+    width: 500px;
+    /* padding-left: 20px; */
+    /* padding-right: 10px;  */
+    /* padding-right: 2200px; */
+    /* margin: 0 -1100px; */
+}
+
+
+
+.feed__inputContainer{
+    
+    background: white;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.feed__input{
+    
+    border: 1px solid rgb(109, 106, 106);
+    border-radius: 30px ;
+    display: flex;
+    padding: 10px;
+    color: grey;
+    padding-left: 15px;
+}
+
+.feed__input form{
+    padding-top: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.feed__input form input{
+    border: none;
+    flex: 1;
+    margin-left: 10px ;
+    outline-width: 0 ;
+    font-weight: 200;
+}
+
+.feed__inputOption{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.inputOptions{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: grey;
+    padding: 10px;
+    cursor: pointer;
+}
+.inputOptions:hover{
+    background-color:rgb(189, 171, 171);
+    border-radius: 10px;
+}
+.inputOptions h4{
+    margin-left: 10px;
+}
+
+/* post */
+.post{
+    background-color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+.post_header{
+    display: flex;
+    margin-bottom: 10px;
+}
+.post__icon
+{
+    font-weight: 300;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+.post__info{
+    margin-left: 10px;
+}
+.post__info p{
+    font-size: 12px;
+    color: grey;
+}
+.post__info h2{
+    font-size: 17px;
+}
+
+/* Feed ends  */
+
+/* widgets starts */
+
+.widgets{
+    margin: 0 -150px;
+    
+    /* margin-right: 2500px; */
+    /* padding-right: 50px; */
+    
+    position: sticky;
+    top: 80px;
+    flex: 0.2;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    height: fit-content;
+    padding-bottom: 10px;
+
+}
+
+.widgets__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.widgets__header h2{
+    font-size: 20px;
+    font-weight: 300px;
+}
+
+.widgets__header i{
+    font-size: 25px;
+}
+
+.widgets__article{
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.widgets__article:hover{
+    background-color: whitesmoke;
+}
+
+.widgets_leftArticle{
+    color: #0177b0;
+    margin-right: 10px;
+
+}
+.widgets_leftArticle i{
+    font-size: 35px;
+}
+.widgets_RightArticle{
+    flex: 1;
+}
+.widgets_RightArticle h4{
+    /* padding-left: 20px; */
+    justify-content: center;
+    font-size: 15px;
+}
+
+.widgets_RightArticle p{
+     padding-left: 10px;
+    font-size: 12px;
+    color: grey;
+    
+}
+/* widgets ends */
